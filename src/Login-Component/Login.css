@@ -1,0 +1,90 @@
+.login-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(0, 0, 0,0.6);
+    color: #79787e;
+    display: grid;
+}
+.login-form-container{
+    position: relative;
+    place-self: center;
+    background-color: white;
+    max-width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    animation: fadeIn 0.5s;
+}
+.login-title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.login-title h2{
+    font-size: 2em;
+    color: tomato;
+}
+.login-title img{
+    position: absolute;
+   width: 20px; 
+   height: 20px;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+}
+.login-inputs{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* margin: auto; */
+}
+.login-inputs input{
+    font-size: 1em;
+    padding: 5px;
+    border: 2px solid rgb(255, 99, 71,0.5);
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.login-form-container button{
+    font-size: 1em;
+    font-weight: 500;
+    padding: 8px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #326e90;
+    color: tomato;
+    cursor: pointer;
+    overflow: hidden;
+
+
+}
+.login-condition{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 8px;
+}
+.login-condition input{
+    margin-top: 5px;
+}
+.login-form-container p span{
+    font-size: 1.2em;
+    color: tomato;
+    cursor: pointer;
+}

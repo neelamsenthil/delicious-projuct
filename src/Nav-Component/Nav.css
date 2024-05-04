@@ -1,0 +1,130 @@
+
+.navbar-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+.navbar-container h1 {
+    color: tomato;
+    font-weight: bolder;
+}
+.navbar-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    color: #79787e;
+    font-size: 1.2em;
+    font-weight: 500;
+
+}
+.navbar-menu li{
+    /* padding: 10px; */
+    cursor: pointer;
+
+}
+.navbar-container .active{
+    border-bottom: 2.5px solid #79787e;
+    padding-bottom: 7px;
+    color: #2e2e32;
+}
+
+.navbar-right{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+.navbar-right .cart{
+    cursor: pointer;
+}
+.navbar-right button{
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: transparent;
+    color: #79787e;
+    border: 2px solid salmon;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar-right button:hover{
+    background-color: rgb(242, 113, 90 ,0.5);
+    /* border: 3px solid salmon; */
+    color: #2e2e32;
+
+}
+.cart{
+    position: relative;
+}
+.cart .dot{
+    position: absolute;
+    background-color: tomato;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    top: -9px;
+    right: 10px;
+}
+
+@media (max-width:1050px){
+    .navbar-container h1{
+        width: 150px;
+    }
+    .navbar-menu{
+        gap: 20px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 25px;
+    }
+    .cart .dot{
+        right: 8px;
+    }
+}
+
+@media (max-width:950px){
+    .navbar-container h1{
+        font-size: 1.5em;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 1em;
+        margin-right: 10px;
+
+    }
+    .navbar-container .active{
+        border-bottom: 2px solid #79787e;
+        padding-bottom: 5px;
+        color: #2e2e32;
+    }
+    
+    .navbar-right{
+        gap: 15px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .cart .dot{
+        right: 7px;
+    }
+    .navbar-right button{
+        padding: 8px;
+    }
+}
+
+@media (max-width:800px){
+    .navbar-menu{
+        display: none;
+    }
+}
+
+
